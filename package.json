@@ -1,0 +1,48 @@
+{
+  "name": "@map-colonies/ts-npm-package-boilerplate",
+  "version": "1.0.0",
+  "description": "TypeScript and JavaScript classes for osm elements",
+  "main": "src/index.ts",
+  "scripts": {
+    "format:fix": "prettier --write .",
+    "format": "prettier --check .",
+    "lint:fix": "eslint",
+    "lint": "eslint",
+    "release": "standard-version",
+    "prebuild": "npm run clear",
+    "build": "tsc --project tsconfig.build.json",
+    "clear": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MapColonies/ts-npm-package-boilerplate.git"
+  },
+  "author": "MapColonies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MapColonies/ts-npm-package-boilerplate/issues"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "homepage": "https://github.com/MapColonies/ts-npm-package-boilerplate#readme",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^11.0.0",
+    "@map-colonies/eslint-config": "^1.1.0",
+    "@types/node": "^14.14.12",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "commitlint": "^11.0.0",
+    "eslint": "^7.15.0",
+    "husky": "^4.3.5",
+    "prettier": "^2.2.1",
+    "standard-version": "^9.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.2"
+  }
+}

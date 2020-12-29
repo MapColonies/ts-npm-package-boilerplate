@@ -1,3 +1,3 @@
 export const cat = {
-  say: 'meow'
+  say: 'meow',
 };

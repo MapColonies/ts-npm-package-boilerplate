@@ -5,5 +5,5 @@
   },
 
   "include": ["."],
-  "exclude": ["node_modules", "dist", "config"]
+  "exclude": ["node_modules", "dist"]
 }

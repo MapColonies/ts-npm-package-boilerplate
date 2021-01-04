@@ -2,7 +2,7 @@
   "name": "@map-colonies/ts-npm-package-boilerplate",
   "version": "1.0.0",
   "description": "TypeScript and JavaScript classes for osm elements",
-  "main": "./src/index.ts",
+  "main": "./dist/index.js",
   "scripts": {
     "test:unit": "jest --config=./tests/configurations/unit/jest.config.js",
     "test:integration": "jest --config=./tests/configurations/integration/jest.config.js",

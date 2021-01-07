@@ -10,5 +10,12 @@ module.exports = {
   moduleDirectories: ['node_modules', 'src'],
   collectCoverageFrom: ['<rootDir>/src/**/*.{ts}', '!**/node_modules/**', '!**/vendor/**'],
   preset: 'ts-jest',
+  reporters: [
+    'default',
+    [
+      'jest-html-reporters',
+      { multipleReportsUnitePath: './reports', pageTitle: 'integration', publicPath: './reports', filename: 'integration.html' },
+    ],
+  ],
   testEnvironment: 'node',
 };

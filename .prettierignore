@@ -8,3 +8,5 @@ package.json
 README.md
 tsbuildconfig.json
 tsconfig.json
+coverage
+reports

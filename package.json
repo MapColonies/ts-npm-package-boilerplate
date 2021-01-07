@@ -6,9 +6,10 @@
   "scripts": {
     "test:unit": "jest --config=./tests/configurations/unit/jest.config.js",
     "test:integration": "jest --config=./tests/configurations/integration/jest.config.js",
-    "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write .",
-    "prelint:fix": "npm run prettier:fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "prelint:fix": "npm run format:fix",
+    "prelint": "npm run format",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "release": "standard-version",
@@ -16,7 +17,8 @@
     "prebuild": "npm run clean",
     "build": "tsc --project tsconfig.build.json",
     "start": "npm run build && cd dist && node ./index.js",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",

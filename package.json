@@ -31,6 +31,7 @@
   },
   "husky": {
     "hooks": {
+      "pre-commit": "pretty-quick --staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -42,6 +43,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@map-colonies/eslint-config": "^2.0.0",
+    "@map-colonies/prettier-config": "0.0.1",
     "@types/jest": "^26.0.19",
     "@types/node": "^14.14.12",
     "commitlint": "^11.0.0",
@@ -52,6 +54,7 @@
     "jest-create-mock-instance": "^1.1.0",
     "jest-html-reporters": "^2.1.2",
     "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
     "standard-version": "^9.0.0",
     "ts-jest": "^26.4.4",
     "ts-node": "^9.1.1",

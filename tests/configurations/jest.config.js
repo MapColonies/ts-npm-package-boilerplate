@@ -1,15 +1,15 @@
+/** @type {import('jest').Config} */
 module.exports = {
   transform: {
-    '^.+\\.ts$': 'ts-jest',
+    '^.+\\.ts$': '@swc/jest',
   },
   coverageReporters: ['text', 'html'],
-  rootDir: '../../../.',
-  testMatch: ['<rootDir>/tests/integration/**/*.spec.ts'],
+  rootDir: '../../.',
+  testMatch: ['<rootDir>/tests/**/*.spec.ts'],
   setupFiles: ['<rootDir>/tests/configurations/jest.setup.js'],
   collectCoverage: true,
   moduleDirectories: ['node_modules', 'src'],
   collectCoverageFrom: ['<rootDir>/src/**/*.{ts}', '!**/node_modules/**', '!**/vendor/**'],
-  preset: 'ts-jest',
   reporters: [
     'default',
     [

@@ -10,7 +10,7 @@
     }
   },
   "scripts": {
-    "test": "jest --config=./tests/configurations/jest.config.js",
+    "test": "tsc --noEmit -p tsconfig.json && jest --config=./tests/configurations/jest.config.js",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "prelint:fix": "npm run format:fix",

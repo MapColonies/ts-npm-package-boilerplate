@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
-    "@map-colonies/eslint-config": "^4.0.0",
+    "@map-colonies/eslint-config": "^6.0.0",
     "@map-colonies/prettier-config": "^0.0.1",
     "@map-colonies/commitlint-config": "^1.1.1",
     "@types/jest": "^29.5.14",

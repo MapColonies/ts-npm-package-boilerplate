@@ -58,7 +58,7 @@
     "prettier": "^3.5.3",
     "pretty-quick": "^4.1.1",
     "typedoc": "^0.28.1",
-    "@swc/core": "^1.11.11",
+    "@swc/core": "^1.11.12",
     "@swc/jest": "^0.2.37",
     "typescript": "^5.8.2",
     "@map-colonies/tsconfig": "^1.0.1"
